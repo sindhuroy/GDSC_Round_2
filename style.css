@@ -74,16 +74,25 @@ a:hover {
     display: inline-block;
     cursor: pointer;
 }
-#profileimage{
-    width: auto;
-    margin: auto;
-}
-.hobbies-head{
-    display: flex;
-    margin-top: 50px;
-}
 
+.hobbies-head{
+    margin-top: 60px;
+    font-family: Sofia;
+}
+.hobbies-container-3{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.hobbies-image{
+    width: 200px;
+}
 .skills-head{
     display: flex;
     margin-top: 50px;
+}
+.skills{
+    font-size: 30px;
+    font-family: Sofia;
 }
