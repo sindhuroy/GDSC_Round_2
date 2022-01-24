@@ -25,6 +25,12 @@ a:hover {
     font-size: 40px;
     font-family: Sofia;
 }
+@media(max-width:600px){
+    .profilename{
+        width:40%;
+        font-size: 20px;
+    }
+}
 .nav{
     display: flex;
     justify-content: space-between;
