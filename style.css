@@ -102,3 +102,6 @@ a:hover {
     font-size: 30px;
     font-family: Sofia;
 }
+img {
+    border-radius: 50%;
+  }
