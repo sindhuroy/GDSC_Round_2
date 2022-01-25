@@ -39,10 +39,13 @@ a:hover {
     margin-right: auto;
 }
 .menu{
-    cursor: pointer;
     color:rgb(86, 4, 238);
     font-size: 20px;
     font-family: Sofia;
+}
+.menu:hover{
+    cursor: pointer;
+    background-color: white;
 }
 .content{
     display:flex;
