@@ -82,7 +82,9 @@ a:hover {
     cursor: pointer;
 }
 .button:hover {background-color: #185cdb}
-
+.ProfilePhoto{
+    width: auto;
+}
 .hobbies-head{
     margin-top: 60px;
     font-family: Sofia;
@@ -127,6 +129,9 @@ img {
         color:rgb(10, 102, 206);
         font-size: 20px;
         font-family: Sofia;
+    }
+    .ProfilePhoto{
+        width: 300px;
     }
     .button{
         font-size: 25px;
