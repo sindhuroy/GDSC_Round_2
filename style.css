@@ -83,6 +83,9 @@ a:hover {
     margin-top: 60px;
     font-family: Sofia;
 }
+h1{
+    font-family: Sofia;
+}
 .hobbies-container-3{
     display: flex;
     flex-wrap: wrap;
@@ -110,6 +113,19 @@ img {
     .profilename{
         width:40%;
         font-size: 20px;
+    }
+    .contenthead{
+        color:rgb(230, 23, 50);
+        font-size: 20px;
+        font-family: Sofia;
+    }
+    .contentindetail{
+        color:rgb(10, 102, 206);
+        font-size: 20px;
+        font-family: Sofia;
+    }
+    .button{
+        font-size: 25px;
     }
     .skill-stat{
         width: 200px;
