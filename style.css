@@ -101,6 +101,11 @@ h1{
 .hobbies-image{
     width: 200px;
 }
+.hobbies-image-caption{
+    color:rgb(86, 4, 238);
+    font-size: 20px;
+    font-family: Sofia;
+}
 .skills-head{
     display: flex;
     margin-top: 50px;
