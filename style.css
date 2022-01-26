@@ -84,6 +84,10 @@ a:hover {
 .button:hover {background-color: #185cdb}
 .ProfilePhoto{
     width: auto;
+    animation-name: animateimages;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
 }
 .hobbies-head{
     margin-top: 60px;
@@ -100,6 +104,13 @@ h1{
 }
 .hobbies-image{
     width: 200px;
+}
+.hobbies-image{
+    width: 200px;
+    animation-name: animateimages;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
 }
 .hobbies-image-caption{
     color:rgb(86, 4, 238);
@@ -124,6 +135,10 @@ img {
 }
 .skill-stat{
     border-radius: 0%;
+}
+@keyframes animateimages {
+    from {border-radius: 47%;}
+    to {border-radius: 50%;}
 }
 @media(max-width:600px){
     .profilename{
