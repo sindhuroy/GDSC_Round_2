@@ -91,6 +91,9 @@ a:hover {
     animation-iteration-count: infinite;
     animation-direction: alternate-reverse;
 }
+.ProfilePhoto:hover{
+    transform: scaleX(-1);
+}
 .hobbies-head{
     margin-top: 60px;
     font-family: Sofia;
