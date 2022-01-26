@@ -84,6 +84,8 @@ a:hover {
 .button:hover {background-color: #185cdb}
 .ProfilePhoto{
     width: auto;
+    border: 4px solid rgb(71, 6, 6);
+    padding: 5px;
     animation-name: animateimages;
     animation-duration: 0.5s;
     animation-iteration-count: infinite;
