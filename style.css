@@ -113,9 +113,7 @@ h1{
 .skills-container{
     display: flex;
     flex-wrap: wrap;
-}
-.skills-container-tech{
-    width: 60%;
+    justify-content: space-around;
 }
 .skills{
     font-size: 30px;
