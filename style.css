@@ -179,6 +179,10 @@ img {
     .button{
         font-size: 25px;
     }
+    .skills-container{
+        border: 4px double rgb(71, 6, 6);
+        border-radius: 2%;
+    }
     .skill-stat{
         width: 200px;
     }
