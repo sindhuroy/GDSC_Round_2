@@ -181,7 +181,7 @@ img {
     }
     .skills-container{
         border: 4px double rgb(71, 6, 6);
-        border-radius: 2%;
+        border-radius: 4%;
     }
     .skill-stat{
         width: 200px;
