@@ -100,6 +100,7 @@ a:hover {
 }
 h1{
     font-family: Sofia;
+    text-shadow: 2px 2px #ff0000;
 }
 .hobbies-container-3{
     display: flex;
@@ -134,6 +135,11 @@ h1{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+}
+.skillshead2{
+    font-size: 30px;
+    font-family: Sofia;
+    text-shadow: 2px 2px #ff0000;
 }
 .skills{
     font-size: 30px;
@@ -178,6 +184,9 @@ img {
     }
     .hobbies-image{
         width: 150px;
+    }
+    .skillshead2{
+        font-size: 25px;
     }
     .skills{
         font-size: 25px;
