@@ -181,11 +181,11 @@ img {
     }
     .hobbies-container-3{
         border: 10px solid rgb(71, 6, 6);
-        border-radius: 1%;
+        border-radius: 0%;
     }
     .skills-container{
         border: 10px solid rgb(71, 6, 6);
-        border-radius: 1%;
+        border-radius: 0%;
     }
     .skill-stat{
         width: 200px;
