@@ -179,6 +179,10 @@ img {
     .button{
         font-size: 25px;
     }
+    .hobbies-container-3{
+        border: 4px double rgb(71, 6, 6);
+        border-radius: 4%;
+    }
     .skills-container{
         border: 4px double rgb(71, 6, 6);
         border-radius: 4%;
