@@ -1,6 +1,12 @@
 body{
     margin:0;
-    background-color: papayawhip;;
+    background-color: papayawhip;
+}
+#hobbies{
+    display: none;
+}
+#skills{
+    display: none;
 }
 .header{
     display:flex;
@@ -10,6 +16,21 @@ body{
     position: fixed;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+.nav-button{
+    font-size: 40px;
+    font-family: Sofia;
+    background: rgb(157, 231, 127);
+    border: none;
+    color:rgb(86, 4, 238);
+    padding: 0px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+.nav-button:hover{
+    background-color: #4CAF50; /* Green */
 }
 a:link {
     text-decoration: none;
@@ -24,22 +45,6 @@ a:hover {
     color:rgb(86, 4, 238);
     font-size: 40px;
     font-family: Sofia;
-}
-.nav{
-    display: flex;
-    justify-content: space-between;
-    direction: ltr;
-    width: 30%;
-    margin-right: auto;
-}
-.menu{
-    color:rgb(86, 4, 238);
-    font-size: 35px;
-    font-family: Sofia;
-}
-.menu:hover{
-    cursor: pointer;
-    background-color: white;
 }
 .content{
     display:flex;
@@ -81,7 +86,6 @@ a:hover {
     display: inline-block;
     cursor: pointer;
 }
-.button:hover {background-color: #185cdb}
 .ProfilePhoto{
     width: auto;
     border: 4px solid rgb(71, 6, 6);
@@ -91,14 +95,14 @@ a:hover {
     animation-iteration-count: infinite;
     animation-direction: alternate-reverse;
 }
-.ProfilePhoto:hover{
-    transform: scaleX(-1);
-}
+
+.button:hover {background-color: #185cdb}
 .hobbies-head{
     margin-top: 60px;
     font-family: Sofia;
 }
-h1{
+.skillshead{
+    font-size: 40px;
     font-family: Sofia;
     text-shadow: 2px 2px #ff0000;
 }
@@ -108,8 +112,13 @@ h1{
     justify-content: space-around;
     align-items: center;
 }
-.hobbies-image{
-    width: 200px;
+.hobbies-image-caption{
+    color:rgb(86, 4, 238);
+    font-size: 20px;
+    font-family: Sofia;
+}
+img {
+    border-radius: 50%;
 }
 .hobbies-image{
     width: 200px;
@@ -119,23 +128,34 @@ h1{
     animation-direction: alternate-reverse;
 }
 .hobbies-image:hover{
-    width: 250px;
-    transition-duration: 2s;
-}
-.hobbies-image-caption{
-    color:rgb(86, 4, 238);
-    font-size: 20px;
-    font-family: Sofia;
+    border: 4px solid rgb(223, 42, 11);
+    box-shadow: 0.2em 0.2em 10px rgb(223, 42, 11) ,-0.2em -0.2em 10px rgb(223, 42, 11);
+    transform: scale(1.1);
 }
 .skills-head{
     display: flex;
     margin-top: 50px;
+    font-family: Sofia;
 }
 .skills-container-tech{  
-    box-shadow: 10px 10px 5px grey, 10px 10px 5px grey inset;
+    border: 4px solid rgb(223, 42, 11);
+    box-shadow: 0.2em 0.2em 10px rgb(223, 42, 11) ,-0.2em -0.2em 10px rgb(223, 42, 11);
+    border-radius: 8px;
+}
+.skills-container-tech:hover{
+    border: 4px solid rgb(223, 42, 11);
+    transform: scale(1.05);
+    box-shadow: 0.2em 0.2em 10px rgb(223, 42, 11) ,-0.2em -0.2em 10px rgb(223, 42, 11);
 }
 .skills-container-nontech{  
-    box-shadow: 10px 10px 5px grey, 10px 10px 5px grey inset;
+    border: 4px solid rgb(223, 42, 11);
+    box-shadow: 0.2em 0.2em 10px rgb(223, 42, 11) ,-0.2em -0.2em 10px rgb(223, 42, 11);
+    border-radius: 8px;
+}
+.skills-container-nontech:hover{
+    border: 4px solid rgb(223, 42, 11);
+    transform: scale(1.05);
+    box-shadow: 0.2em 0.2em 10px rgb(223, 42, 11) ,-0.2em -0.2em 10px rgb(223, 42, 11);
 }
 .skills-container{
     display: flex;
@@ -151,11 +171,23 @@ h1{
     font-size: 30px;
     font-family: Sofia;
 }
-img {
-    border-radius: 50%;
-}
 .skill-stat{
-    border-radius: 0%;
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+}
+.skill-stat-value{
+    background-color: violet;
+    height: 20px;
+}
+.footer{
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    color:rgb(86, 4, 238);
+    font-size: 40px;
+    font-family: Sofia;
+    bottom:0;
 }
 @keyframes animateimages {
     from {border-radius: 47%;}
@@ -164,6 +196,9 @@ img {
 @media(max-width:600px){
     .profilename{
         width:40%;
+        font-size: 20px;
+    }
+    .nav-button{
         font-size: 20px;
     }
     .menu{
@@ -182,28 +217,37 @@ img {
     .ProfilePhoto{
         width: 300px;
     }
+    .socialmedia{
+        font-size: 20px;
+    }
     .button{
         font-size: 25px;
     }
     .hobbies-container-3{
-        border: 10px solid rgb(71, 6, 6);
-        border-radius: 0%;
-    }
-    .skills-container-tech{  
-        box-shadow: none;
-    }
-    .skills-container-nontech{  
-        box-shadow: none;
+        border: 4px double rgb(71, 6, 6);
+        border-radius: 6%;
     }
     .skills-container{
-        border: 10px solid rgb(71, 6, 6);
+        border: 4px double rgb(71, 6, 6);
         border-radius: 0%;
     }
-    .skill-stat{
-        width: 200px;
+    .skills-container-tech{
+        border: none;  
+        box-shadow: none;
     }
-    .hobbies-image{
-        width: 150px;
+    .skills-container-tech:hover{
+        border: none;
+        box-shadow: none;
+        transform: scale(1);
+    }
+    .skills-container-nontech{  
+        border:none;
+        box-shadow: none;
+    }
+    .skills-container-nontech:hover{
+        border: none;
+        box-shadow: none;
+        transform: scale(1);
     }
     .skillshead2{
         font-size: 25px;
@@ -212,8 +256,24 @@ img {
         font-size: 25px;
         font-family: Sofia;
     }
+    .skill-stat{
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        background-color: white;
+    }
+    .skill-stat-value{
+        background-color: violet;
+        height: 15px;
+    }
+    .hobbies-image{
+        width: 135px;
+    }
     .hobbies-image:hover{
         width: 160px;
         transition-duration: 2s;
+    }
+    .footer{
+        font-size: 20px;
     }
 }
